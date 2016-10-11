@@ -1,0 +1,45 @@
+#N canvas 167 114 581 521 10;
+#X msg 100 130 info;
+#X obj 107 289 route open;
+#X obj 117 313 bng 15 250 50 0 empty empty UPDATED! 17 7 0 10 -262144
+-1 -1;
+#X obj 107 357 tgl 15 0 empty empty STATUS 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 100 102 metro 500;
+#X obj 100 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 107 383 sel 0;
+#X obj 139 411 bng 15 250 50 0 empty empty NOTHING-TO-DO 17 7 0 10
+-262144 -1 -1;
+#X msg 256 203 retries 0;
+#X obj 134 161 bng 15 250 50 0 empty \$0-recon r:0-recon 17 7 0 10
+-262144 -1 -1;
+#X obj 107 441 bng 15 250 50 0 \$0-recon empty s:0-recon 17 7 0 10
+-262144 -1 -1;
+#X text 137 22 automatically re-connect serial connections..;
+#X obj 256 175 loadbang;
+#X text 257 231 we will do our retries by ourselves.;
+#X text 323 359 tested @ linux x86_64;
+#X obj 134 181 symbol \$1;
+#X msg 134 203 devicename \$1;
+#X obj 100 48 inlet;
+#X obj 40 468 outlet;
+#X obj 40 48 inlet;
+#X obj 40 261 arduino -1;
+#X connect 0 0 20 0;
+#X connect 1 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 6 0;
+#X connect 4 0 0 0;
+#X connect 5 0 4 0;
+#X connect 6 0 10 0;
+#X connect 6 1 7 0;
+#X connect 8 0 20 0;
+#X connect 9 0 15 0;
+#X connect 12 0 8 0;
+#X connect 15 0 16 0;
+#X connect 16 0 20 0;
+#X connect 17 0 5 0;
+#X connect 19 0 20 0;
+#X connect 20 0 18 0;
+#X connect 20 1 1 0;
