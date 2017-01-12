@@ -1,12 +1,12 @@
-#N canvas 490 109 460 182 10;
+#N canvas 490 114 516 182 10;
 #N canvas 1 77 450 250 (subpatch) 0;
 #X array \$0-scope 280 float 0;
 #X coords 0 2 279 -1 280 140 2 0 0;
 #X restore 20 20 graph;
 #X floatatom 335 74 5 0 0 0 - - -, f 5;
 #X obj 335 52 inlet;
-#X obj 395 52 inlet;
-#X obj 395 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 455 52 inlet;
+#X obj 455 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #N canvas 3 104 319 228 runner 0;
 #X floatatom 35 64 5 0 0 0 - - -, f 5;
@@ -34,9 +34,20 @@
 #X connect 8 0 9 0;
 #X connect 9 0 1 1;
 #X connect 10 0 3 0;
-#X restore 335 94 pd runner;
-#X connect 1 0 5 0;
+#X restore 335 136 pd runner;
+#X obj 385 32 loadbang;
+#X obj 385 54 f \$1;
+#X obj 385 76 sel 0;
+#X msg 385 98 1;
+#X obj 335 93 *;
+#X connect 1 0 10 0;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 1 10 1;
+#X connect 9 0 10 1;
+#X connect 10 0 5 0;
 #X coords 0 -1 1 1 280 140 1 20 20;
