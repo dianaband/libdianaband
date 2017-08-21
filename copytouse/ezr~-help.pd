@@ -1,0 +1,7 @@
+#N canvas 207 117 380 433 10;
+#X obj 114 56 adc~;
+#X text 15 7 NOTE! : FIRST of all \, copy this to the folder to save
+recorded files!;
+#X obj 87 100 ezr~;
+#X connect 0 0 2 0;
+#X connect 0 1 2 1;
