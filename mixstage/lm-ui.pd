@@ -1,0 +1,19 @@
+#N canvas 161 313 231 213 8;
+#X obj 88 95 cputime;
+#X obj 88 20 loadbang;
+#X obj 88 45 metro 1000;
+#X obj 88 70 t b b;
+#X obj 88 145 * 0.1;
+#X obj 88 120 int;
+#X obj 88 170 s \$0-cpu-l-set;
+#X obj 20 20 cnv 15 30 30 empty empty cpu 10 8 0 10 -257985 -258113
+0;
+#X floatatom 31 36 0 0 0 0 % #0-cpu-l-set #0-cpu-l;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 3 1 0 1;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X coords 0 -1 1 1 30 30 2 20 20;
