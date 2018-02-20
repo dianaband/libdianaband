@@ -211,7 +211,7 @@
 #X coords 0 -1 1 1 21 21 2 20 40;
 #X restore 99 354 pd s;
 #X obj 245 542 dac~;
-#X obj 1058 472 ezrec/ezrec~;
+#X obj 1058 472 ezrec~;
 #X obj 314 59 looper2~;
 #N canvas 501 322 361 201 s 0;
 #X obj 78 6 inlet;

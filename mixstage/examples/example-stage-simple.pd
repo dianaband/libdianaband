@@ -214,7 +214,7 @@
 #X obj 104 459 dac~;
 #X obj 166 446 throw~ live;
 #X obj 550 243 catch~ live;
-#X obj 510 291 ezrec/ezrec~;
+#X obj 510 291 ezrec~;
 #X connect 0 0 2 0;
 #X connect 1 0 7 0;
 #X connect 1 1 6 0;
