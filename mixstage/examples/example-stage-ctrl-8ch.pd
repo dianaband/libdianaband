@@ -1773,10 +1773,10 @@
 #X obj 120 947 catch~ b;
 #X obj 245 947 catch~ c;
 #X obj 340 947 catch~ d;
-#X obj 25 1005 ezrec~ ab;
-#X obj 245 1005 ezrec~ cd;
-#X obj 465 1005 ezrec~ ef;
-#X obj 685 1005 ezrec~ gh;
+#X obj 25 1005 recorded/ezrec~ ab;
+#X obj 245 1005 recorded/ezrec~ cd;
+#X obj 465 1005 recorded/ezrec~ ef;
+#X obj 685 1005 recorded/ezrec~ gh;
 #X obj 465 947 catch~ e;
 #X obj 560 947 catch~ f;
 #X obj 685 947 catch~ g;
