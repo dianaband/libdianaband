@@ -1,7 +1,7 @@
 #N canvas 390 159 718 513 10;
-#X msg 24 21 ssm-rec-2.wav;
+#X msg 24 21 glass-shatter.wav;
 #X obj 105 195 gpui~;
-#X obj 24 59 looper2~;
+#X obj 24 59 sources/looper2~;
 #N canvas 501 322 361 201 s 0;
 #X obj 78 6 inlet;
 #X obj 23 43 bng 15 250 50 0 empty RELOAD-ALL empty 17 7 0 10 -214708

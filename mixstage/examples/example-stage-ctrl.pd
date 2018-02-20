@@ -1,6 +1,6 @@
 #N canvas 3 90 1265 707 10;
 #X obj 25 195 gpui~;
-#X obj 24 59 looper2~;
+#X obj 24 59 sources/looper2~;
 #N canvas 501 322 361 201 s 0;
 #X obj 78 6 inlet;
 #X obj 23 43 bng 15 250 50 0 empty RELOAD-ALL empty 17 7 0 10 -186348
@@ -212,7 +212,7 @@
 #X restore 99 354 pd s;
 #X obj 245 542 dac~;
 #X obj 1058 472 recorded/ezrec~;
-#X obj 314 59 looper2~;
+#X obj 314 59 sources/looper2~;
 #N canvas 501 322 361 201 s 0;
 #X obj 78 6 inlet;
 #X obj 23 43 bng 15 250 50 0 empty RELOAD-ALL empty 17 7 0 10 -146994
@@ -422,7 +422,7 @@
 #X obj 330 486 throw~ live_R;
 #X obj 1058 414 catch~ live_L;
 #X obj 66 512 throw~ live_L;
-#X obj 604 59 looper2~;
+#X obj 604 59 sources/looper2~;
 #N canvas 501 322 361 201 s 0;
 #X obj 78 6 inlet;
 #X obj 23 43 bng 15 250 50 0 empty RELOAD-ALL empty 17 7 0 10 -171308
@@ -631,9 +631,9 @@
 #X obj 655 542 dac~;
 #X obj 740 486 throw~ live_R;
 #X obj 556 490 throw~ live_L;
-#X msg 24 21 ssm-rec-0.wav;
-#X msg 314 21 ssm-rec-1.wav;
-#X msg 604 21 ssm-rec-2.wav;
+#X msg 24 21 glass-shatter.wav;
+#X msg 314 21 accorcyth.wav;
+#X msg 604 21 interference1.wav;
 #N canvas 172 90 1049 707 nanokontrol2 0;
 #X floatatom 431 278 5 0 0 0 - - -, f 5;
 #X obj 760 437 ctlin;
@@ -656,7 +656,7 @@
 #X obj 851 256 ctlin 6 1;
 #X obj 921 256 ctlin 7 1;
 #X obj 20 39 vsl 15 65 0 127 0 0 empty empty empty 0 -9 0 10 -228856
--4160 -1 6400 1;
+-4160 -1 0 1;
 #X obj 35 39 vsl 15 65 0 127 0 0 empty empty empty 0 -9 0 10 -261234
 -4160 -1 0 1;
 #X obj 50 39 vsl 15 65 0 127 0 0 empty empty empty 0 -9 0 10 -261682
@@ -739,7 +739,7 @@
 #X connect 6 0 18 0;
 #X connect 6 1 7 0;
 #X connect 7 0 6 2;
-#X connect 10 1 12 0;
+#X connect 10 0 12 0;
 #X connect 10 2 11 0;
 #X connect 11 0 10 1;
 #X connect 12 0 31 0;

@@ -1,10 +1,10 @@
 #N canvas 76 90 1008 369 10;
-#X obj 24 49 looper2~;
+#X obj 24 49 sources/looper2~;
 #X obj 24 175 mx~;
 #X obj 104 175 mx~;
-#X obj 264 49 looper2~;
-#X obj 504 49 looper2~;
-#X obj 744 49 looper2~;
+#X obj 264 49 sources/looper2~;
+#X obj 504 49 sources/looper2~;
+#X obj 744 49 sources/looper2~;
 #X obj 264 175 mx~;
 #X obj 344 175 mx~;
 #X obj 504 175 mx~;
