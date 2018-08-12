@@ -342,11 +342,6 @@ empty -2 -8 0 10 -228856 -258113 -1 0 1;
 #X text 58 258 (1) filename;
 #X text 657 106 (2) saved states;
 #X text 20 463 ## changelog ##;
-#N canvas 79 83 598 554 changelog 0;
-#X text 17 12 dooho yi / dianaband @ 2017 11 19 / initial commit;
-#X text 17 32 dooho yi / dianaband @ 2018 8 12 / rearranged \, comments
-;
-#X restore 20 498 pd changelog;
 #X text 19 521 dooho yi (pilotedeguerre@gmail.com) @ dianaband;
 #X text 308 422 ## audio buffers and outputs;
 #X text 20 143 ## graphical user interfaces ##;
@@ -408,6 +403,17 @@ empty -2 -8 0 10 -228856 -258113 -1 0 1;
 #X text 375 524 (1) out_L;
 #X text 515 534 (2) out_R;
 #X text 664 192 (3) cur. states;
+#N canvas 79 83 471 397 changelog/todos 1;
+#X text 17 62 dooho yi / dianaband @ 2017 11 19 / initial commit;
+#X text 17 82 dooho yi / dianaband @ 2018 8 12 / rearranged \, comments
+;
+#X text 140 25 ## changelog ##;
+#X text 140 135 ## todo ##;
+#X text 73 176 fileloading has hardcoded 'maxsize' \, parameterize
+it : -maxsize 8e+07;
+#X text 73 226 samplerate is fixed to be '44100' \, parameterize it
+;
+#X restore 20 498 pd changelog/todos;
 #X connect 0 0 1 0;
 #X connect 1 0 34 0;
 #X connect 2 0 8 0;
@@ -445,10 +451,10 @@ empty -2 -8 0 10 -228856 -258113 -1 0 1;
 #X connect 41 0 42 0;
 #X connect 42 0 52 0;
 #X connect 43 0 41 0;
-#X connect 48 0 68 1;
-#X connect 49 0 68 0;
+#X connect 48 0 67 1;
+#X connect 49 0 67 0;
 #X connect 53 0 40 0;
 #X connect 54 0 25 0;
 #X connect 54 0 26 0;
-#X connect 68 0 50 0;
+#X connect 67 0 50 0;
 #X coords 0 -1 1 1 170 105 1 20 20;
