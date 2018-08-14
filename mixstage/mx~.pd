@@ -1,15 +1,15 @@
-#N canvas 72 142 400 234 10;
+#N canvas 410 209 398 230 10;
 #X obj 224 94 inlet~;
 #X obj 224 166 outlet~;
-#X obj 20 51 vsl 39 50 0 1.5 0 0 empty empty empty 20 -9 0 10 -13330
--257985 -4032 3267 1;
+#X obj 20 51 vsl 29 79 0 1.5 0 0 empty empty empty 20 -9 0 10 -4061
+-159808 -4032 5200 1;
 #X text 20 201 tape pitchshifting + gain adjust;
-#X floatatom 37 106 5 0 0 0 g - -, f 5;
+#X floatatom 37 135 5 0 0 0 g - -, f 5;
 #X msg 165 127 set \$1;
 #X obj 224 144 hip~ 3;
 #X obj 224 122 *~;
-#X obj 59 51 vsl 10 50 0 1.5 0 0 empty empty empty 20 -9 0 10 -83269
--258113 -4032 3267 1;
+#X obj 49 51 vsl 10 79 0 1.5 0 0 empty empty empty 20 -9 0 10 -1891
+-258113 -4032 5200 1;
 #X msg 79 7 set \$1;
 #X msg 6 6 set \$1;
 #X obj 165 105 line;
@@ -41,8 +41,11 @@
 #X connect 3 0 2 0;
 #X connect 4 0 1 0;
 #X restore 281 144 pd savestate;
-#X obj 20 134 r \$0-g-set;
+#X obj 20 163 r \$0-g-set;
 #X obj 262 32 inlet;
+#X obj 60 51 vu 8 80 empty empty -1 -8 0 10 -66577 -1 0 0;
+#X obj 148 153 env~ 1024;
+#X obj 148 176 - 100;
 #X connect 0 0 7 0;
 #X connect 2 0 9 0;
 #X connect 2 0 12 0;
@@ -50,6 +53,7 @@
 #X connect 4 0 12 0;
 #X connect 5 0 8 0;
 #X connect 6 0 1 0;
+#X connect 6 0 26 0;
 #X connect 7 0 6 0;
 #X connect 9 0 4 0;
 #X connect 10 0 2 0;
@@ -67,4 +71,6 @@
 #X connect 22 0 21 0;
 #X connect 23 0 4 0;
 #X connect 24 0 2 0;
-#X coords 0 -1 1 1 49 103 1 20 20;
+#X connect 26 0 27 0;
+#X connect 27 0 25 0;
+#X coords 0 -1 1 1 49 132 1 20 20;
