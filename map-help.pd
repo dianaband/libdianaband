@@ -1,0 +1,19 @@
+#N canvas 1 84 487 300 10;
+#X obj 16 143 map-ui 34 456.315 0.0012 0.0016;
+#X obj 64 100 map 34 456.315 0.0012 0.0016;
+#X floatatom 16 87 5 0 0 0 - - -;
+#X floatatom 64 121 15 0 0 0 - - -;
+#X floatatom 16 268 15 0 0 0 - - -;
+#X obj 244 220 map2 34 456.315 0.0012 0.0016;
+#X floatatom 244 241 15 0 0 0 - - -;
+#X text 15 49 (INPUT / OUPUT must be increasing);
+#X text 16 13 basic map : (val - from[0]) * (to[1] - to[0]) / (from[1]
+- from[0]) + to[0];
+#X text 240 174 (INPUT / OUPUT CAN be bi-directional);
+#X text 240 194 NO LIMIT for output (extrapolation)!;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 5 0;
+#X connect 5 0 6 0;

@@ -1,0 +1,127 @@
+#N canvas 198 84 573 623 10;
+#X obj 23 150 inlet;
+#X obj 439 231 loadbang;
+#X obj 454 301 f \$1;
+#X obj 470 324 f \$2;
+#X obj 486 347 f \$3;
+#X obj 502 370 f \$4;
+#X obj 454 401 v \$0-from0;
+#X obj 470 424 v \$0-from1;
+#X obj 486 447 v \$0-to0;
+#X obj 502 470 v \$0-to1;
+#X obj 439 254 t b b b b b;
+#X obj 439 277 bng 15 250 50 0 \$0-apply empty s:apply! 17 7 0 10 -257985
+-1 -1;
+#X obj 172 216 bng 15 250 50 0 empty \$0-apply r:apply! 17 7 0 10 -257985
+-1 -1;
+#X obj 68 170 v \$0-from0;
+#X obj 23 253 -;
+#X obj 23 286 *;
+#X obj 172 259 v \$0-to1;
+#X obj 189 282 v \$0-to0;
+#X obj 206 305 v \$0-from1;
+#X obj 223 328 v \$0-from0;
+#X obj 172 305 -;
+#X obj 206 351 -;
+#X obj 172 378 /;
+#X obj 23 362 +;
+#X obj 38 339 v \$0-to0;
+#X obj 23 452 outlet;
+#X obj 172 236 t b b b b;
+#X obj 68 150 bng 15 250 50 0 empty \$0-apply r:apply! 17 7 0 10 -257985
+-1 -1;
+#X obj 38 319 bng 15 250 50 0 empty \$0-apply r:apply! 17 7 0 10 -257985
+-1 -1;
+#X text 511 183 2018 8;
+#X obj 58 370 bng 15 250 50 0 empty \$0-apply r:apply! 17 7 0 10 -257985
+-1 -1;
+#X obj 58 390 v \$0-to1;
+#X obj 23 418 min;
+#X obj 23 205 max;
+#X text 198 186 (INPUT / OUPUT must be increasing);
+#X obj 362 447 inlet;
+#X obj 389 493 unpack f f f f;
+#X obj 362 470 t b a;
+#X obj 362 516 bng 15 250 50 0 \$0-apply empty s:apply! 17 7 0 10 -257985
+-1 -1;
+#X obj 234 393 s \$0-from0-lbl-set;
+#X msg 234 372 label \$1;
+#X msg 227 440 label \$1;
+#X obj 227 461 s \$0-from1-lbl-set;
+#X msg 202 570 label \$1;
+#X msg 219 506 label \$1;
+#X obj 202 591 s \$0-to1-lbl-set;
+#X obj 219 527 s \$0-to0-lbl-set;
+#X obj 79 50 cnv 5 1 1 empty \$0-from0-lbl-set 34 -3 3 0 10 -262144
+-66577 0;
+#X obj 36 62 cnv 5 1 1 empty empty from...| -3 3 0 10 -262144 -66577
+0;
+#X obj 79 76 cnv 5 1 1 empty \$0-from1-lbl-set 456.315 -3 3 0 10 -262144
+-66577 0;
+#X obj 80 94 cnv 5 1 1 empty \$0-to0-lbl-set 0.0012 -3 3 0 10 -262144
+-66577 0;
+#X obj 48 106 cnv 5 1 1 empty empty to...| -3 3 0 10 -262144 -66577
+0;
+#X obj 80 120 cnv 5 1 1 empty \$0-to1-lbl-set 0.0016 -3 3 0 10 -262144
+-66577 0;
+#X text 199 150 basic map : (val - from[0]) * (to[1] - to[0]) / (from[1]
+- from[0]) + to[0];
+#X obj 202 549 sprintf symout %g;
+#X obj 234 351 sprintf symout %g;
+#X obj 227 419 sprintf symout %g;
+#X obj 219 485 sprintf symout %g;
+#X connect 0 0 33 0;
+#X connect 1 0 10 0;
+#X connect 2 0 6 0;
+#X connect 3 0 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 10 0 11 0;
+#X connect 10 1 2 0;
+#X connect 10 2 3 0;
+#X connect 10 3 4 0;
+#X connect 10 4 5 0;
+#X connect 12 0 26 0;
+#X connect 13 0 33 1;
+#X connect 13 0 14 1;
+#X connect 14 0 15 0;
+#X connect 15 0 23 0;
+#X connect 16 0 20 0;
+#X connect 16 0 54 0;
+#X connect 17 0 20 1;
+#X connect 17 0 57 0;
+#X connect 18 0 21 0;
+#X connect 18 0 56 0;
+#X connect 19 0 21 1;
+#X connect 19 0 55 0;
+#X connect 20 0 22 0;
+#X connect 21 0 22 1;
+#X connect 22 0 15 1;
+#X connect 23 0 32 0;
+#X connect 24 0 23 1;
+#X connect 26 0 16 0;
+#X connect 26 1 17 0;
+#X connect 26 2 18 0;
+#X connect 26 3 19 0;
+#X connect 27 0 13 0;
+#X connect 28 0 24 0;
+#X connect 30 0 31 0;
+#X connect 31 0 32 1;
+#X connect 32 0 25 0;
+#X connect 33 0 14 0;
+#X connect 35 0 37 0;
+#X connect 36 0 6 0;
+#X connect 36 1 7 0;
+#X connect 36 2 8 0;
+#X connect 36 3 9 0;
+#X connect 37 0 38 0;
+#X connect 37 1 36 0;
+#X connect 40 0 39 0;
+#X connect 41 0 42 0;
+#X connect 43 0 45 0;
+#X connect 44 0 46 0;
+#X connect 54 0 43 0;
+#X connect 55 0 40 0;
+#X connect 56 0 41 0;
+#X connect 57 0 44 0;
+#X coords 0 -1 1 1 120 120 1 20 20;
