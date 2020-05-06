@@ -7,4 +7,17 @@
 #X obj 371 154 nanokontrol2-single 6 15 5 15 5 25;
 #X obj 406 284 nanokontrol2-single 7 16 6 16 6 26;
 #X obj 441 414 nanokontrol2-single 8 17 7 17 7 27;
+#X floatatom 131 545 5 0 0 0 - - -;
+#X floatatom 189 545 5 0 0 0 - - -;
+#X obj 248 545 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 307 545 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 366 545 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 3 0 8 0;
+#X connect 3 1 9 0;
+#X connect 3 2 10 0;
+#X connect 3 3 11 0;
+#X connect 3 4 12 0;
 #X coords 0 570 1 569 280 120 0;
