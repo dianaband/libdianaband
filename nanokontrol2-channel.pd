@@ -1,8 +1,8 @@
 #N canvas 259 250 600 453 12;
-#X obj 39 71 vsl 15 65 0 127 0 0 empty \$0-color empty 0 -9 0 10 -228856
+#X obj 39 71 vsl 15 65 0 127 0 0 empty \$0-color empty 0 -9 0 10 -204786
 -1 -1 0 1;
 #X obj 22 39 mknob 25 100 0 127 0 0 empty \$0-color empty -2 -6 0 8
--228856 -1 -1 0 1;
+-204786 -1 -1 0 1;
 #X floatatom 42 296 5 0 0 0 - - -;
 #X obj 42 339 outlet;
 #X obj 42 317 / 127;
@@ -10,11 +10,11 @@
 #X obj 22 246 outlet;
 #X obj 22 224 / 127;
 #X obj 153 181 notein;
-#X obj 22 78 tgl 15 0 empty \$0-color empty 17 7 0 10 -228856 -1 -1
+#X obj 22 78 tgl 15 0 empty \$0-color empty 17 7 0 10 -204786 -1 -1
 0 1;
-#X obj 22 98 tgl 15 0 empty \$0-color empty 17 7 0 10 -228856 -1 -1
+#X obj 22 98 tgl 15 0 empty \$0-color empty 17 7 0 10 -204786 -1 -1
 0 1;
-#X obj 22 118 tgl 15 0 empty \$0-color empty 17 7 0 10 -228856 -1 -1
+#X obj 22 118 tgl 15 0 empty \$0-color empty 17 7 0 10 -204786 -1 -1
 0 1;
 #X obj 182 211 != 0;
 #X obj 153 300 f;
