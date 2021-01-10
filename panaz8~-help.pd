@@ -24,7 +24,7 @@
 #X obj 427 130 + 50;
 #X msg 468 152 50;
 #X msg 502 152 -50;
-#X floatatom 430 173 5 0 0 0 - - -;
+#X floatatom 508 127 5 0 0 0 - - -;
 #X floatatom 87 234 5 0 0 0 r:0-autopan #0-autopan -;
 #X text 480 104 circular panning;
 #X text 410 244 channle 8 to 1 in 10 seconds;
