@@ -1,0 +1,12 @@
+#N canvas 620 344 450 300 12;
+#X floatatom 24 125 5 0 0 0 - - -;
+#X floatatom 24 188 5 0 0 0 - - -;
+#X obj 24 163 skip 1000;
+#X obj 24 212 print;
+#X text 19 13 [skip] only output if change \, otherwise skipped;
+#X text 19 27 [skip] only output up to 1 output per \$1 millisec.;
+#X text 19 57 [skip] once \, used for not to overflow relatively slow
+network with too many messages;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;

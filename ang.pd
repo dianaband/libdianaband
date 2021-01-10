@@ -1,0 +1,8 @@
+#N canvas 71 596 400 281 10;
+#X obj 20 55 inlet;
+#X obj 20 101 outlet;
+#X text 20 15 simplified/intuitive version of 'aging';
+#X text 142 77 \$1: max. age \, \$2-\$3: up/down ratio;
+#X obj 20 78 aging 0 \$1 \$2 \$3;
+#X connect 0 0 4 0;
+#X connect 4 0 1 0;

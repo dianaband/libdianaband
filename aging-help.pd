@@ -1,0 +1,12 @@
+#N canvas 236 447 450 300 12;
+#X obj 26 54 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 26 183 print;
+#X obj 36 132 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 26 102 resample 100;
+#X obj 26 158 aging -2 8 1 2;
+#X connect 0 0 3 0;
+#X connect 3 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
