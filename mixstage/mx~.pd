@@ -1,15 +1,15 @@
 #N canvas 360 277 398 230 10;
 #X obj 224 94 inlet~;
 #X obj 224 166 outlet~;
-#X obj 20 51 vsl 34 79 0 2000 0 0 empty \$0-slid-ctrl empty 20 -9 0
-10 -204800 -162280 -4032 1950 1;
+#X obj 20 51 vsl 34 79 0 1.5 0 0 empty \$0-slid-ctrl empty 20 -9 0
+10 -204800 -162280 -4032 7800 1;
 #X text 20 201 tape pitchshifting + gain adjust;
 #X floatatom 42 135 5 0 0 0 g - -;
 #X msg 165 127 set \$1;
 #X obj 224 144 hip~ 3;
 #X obj 224 122 *~;
-#X obj 54 51 vsl 10 79 0 2000 0 0 empty \$0-slid-meter empty 20 -9
-0 10 -260097 -86277 -4032 1950 1;
+#X obj 54 51 vsl 10 79 0 1.5 0 0 empty \$0-slid-meter empty 20 -9 0
+10 -260097 -86277 -4032 7800 1;
 #X msg 79 7 set \$1;
 #X msg 6 6 set \$1;
 #X obj 165 105 line;
